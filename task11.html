@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dance Academy</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background: #fefefe;
+            color: #333;
+        }
+
+        header {
+            background: #111;
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        section {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        #home {
+            text-align: center;
+            background: #f8f8f8;
+        }
+
+        #home h1 {
+            font-size: 2.5rem;
+            color: #222;
+            margin-bottom: 1rem;
+        }
+
+        #home p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        #styles h2,
+        #registration h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: #222;
+        }
+
+        .dance-styles {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .dance-style {
+            flex: 1 1 250px;
+            background: #fff;
+            border-radius: 10px;
+            padding: 1rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .dance-style img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .dance-style h3 {
+            margin-top: 1rem;
+            color: #333;
+        }
+
+        .dance-style p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        form input,
+        form select {
+            width: 100%;
+            padding: 0.8rem;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        form button {
+            padding: 0.8rem 2rem;
+            background: #f39c12;
+            border: none;
+            color: white;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        form button:hover {
+            background: #e67e22;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #111;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .dance-styles {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#styles">Dance Styles</a></li>
+                <li><a href="#registration">Registration</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to the Dance Academy</h1>
+        <p>Join us to learn, grow, and perform in various dance styles. Our academy offers professional dance classes for all levels.</p>
+    </section>
+
+    <section id="styles">
+        <h2>Dance Styles We Offer</h2>
+        <div class="dance-styles">
+            <div class="dance-style">
+                <img src="WhatsApp Image 2025-02-25 at 15.59.10.jpeg" alt="Ballet">
+                <h3>Ballet</h3>
+                <p>Elegant and graceful dance style with rigorous technique.</p>
+            </div>
+            <div class="dance-style">
+                <img src="WhatsApp Image 2025-02-25 at 16.00.05.jpeg" alt="Hip Hop">
+                <h3>Hip Hop</h3>
+                <p>Energetic and street-style dance, full of attitude and creativity.</p>
+            </div>
+            <div class="dance-style">
+                <img src="WhatsApp Image 2025-02-25 at 16.01.07.jpeg" alt="Salsa">
+                <h3>Salsa</h3>
+                <p>Fun and fast-paced Latin dance full of rhythm and passion.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="registration">
+        <h2>Register for Dance Classes</h2>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <select required>
+                <option value="">Select Dance Style</option>
+                <option value="ballet">Ballet</option>
+                <option value="hip-hop">Hip Hop</option>
+                <option value="salsa">Salsa</option>
+            </select>
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Dance Academy. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
